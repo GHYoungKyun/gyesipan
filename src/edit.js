@@ -1,5 +1,6 @@
 import React from 'react';
-import View from './view';
+import { Link } from 'react-router-dom';
+import './css/css.css'
 
 const Edit = () => {
     return (
@@ -33,12 +34,12 @@ const Edit = () => {
                     </div>
                 </div>
                 <div className="bt_wrap">
-                    <a href={View} className="on">수정</a>
-                    <a href={View} 취소></a>
+                    <Link to="/view" className="on">수정</Link>
+                    <Link to="/view">취소</Link>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Edit();
+export default Edit;

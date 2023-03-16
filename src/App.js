@@ -1,19 +1,28 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import List from './list';
+import Edit from './edit';
+import Write from './write';
+import View from './view';
 
 const App = () => {
-    return (
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">LIST</Link>
-                </li>
-            </ul>
-            <hr/>
-            <Route path="/" exact={true} component={List}/>
-        </div>
-    )
-}
+  return (
+      <div>
+          <ul>
+              <li>
+                  <Link to="/list">게시판으로 가기</Link>
+              </li>
+          </ul>
+          <hr />
+          <Routes>
+              <Route path="/list" element={<List />} />
+              <Route path="/edit" element={<Edit />} />
+              <Route path="/write" element={<Write />} />
+              <Route path="/view" element={<View />} />
+          </Routes>
+      </div>
+
+  );
+};
 
 export default App;

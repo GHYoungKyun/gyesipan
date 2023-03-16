@@ -1,6 +1,6 @@
 import React from 'react';
-import View from './view';
-import Write from './write';
+import { Link } from 'react-router-dom';
+import './css/css.css'
 
 const List = () => {
     return (
@@ -20,35 +20,35 @@ const List = () => {
                     </div>
                     <div>
                         <div className="num">5</div>
-                        <div className="title"><a href={View}>글 제목이 들어갑니다.</a></div>
+                        <div className="title"><Link to="/view">글 제목이 들어갑니다.</Link></div>
                         <div className="writer">김이름</div>
                         <div className="date">2021.1.15</div>
                         <div className="count">33</div>
                     </div>
                     <div>
                         <div className="num">4</div>
-                        <div className="title"><a href={View}>글 제목이 들어갑니다.</a></div>
+                        <div className="title"><Link to="/view">글 제목이 들어갑니다.</Link></div>
                         <div className="writer">김이름</div>
                         <div className="date">2021.1.15</div>
                         <div className="count">33</div>
                     </div>
                     <div>
                         <div className="num">3</div>
-                        <div className="title"><a href={View}>글 제목이 들어갑니다.</a></div>
+                        <div className="title"><Link to="/view">글 제목이 들어갑니다.</Link></div>
                         <div className="writer">김이름</div>
                         <div className="date">2021.1.15</div>
                         <div className="count">33</div>
                     </div>
                     <div>
                         <div className="num">2</div>
-                        <div className="title"><a href={View}>글 제목이 들어갑니다.</a></div>
+                        <div className="title"><Link to="/view">글 제목이 들어갑니다.</Link></div>
                         <div className="writer">김이름</div>
                         <div className="date">2021.1.15</div>
                         <div className="count">33</div>
                     </div>
                     <div>
                         <div className="num">1</div>
-                        <div className="title"><a href={View}>글 제목이 들어갑니다.</a></div>
+                        <div className="title"><Link to="/view">글 제목이 들어갑니다.</Link></div>
                         <div className="writer">김이름</div>
                         <div className="date">2021.1.15</div>
                         <div className="count">33</div>
@@ -68,11 +68,11 @@ const List = () => {
                     <a href="#!" className="bt last">>></a>
                 </div>
                 <div className="bt_wrap">
-                    <a href={Write} className="on">등록</a>
+                    <Link to="/write" className="on">등록</Link>
                 </div>
             </div>
         </div>
     );
 };
 
-export default List();
+export default List;

@@ -1,6 +1,6 @@
 import React from 'react';
-import List from './list';
-import Edit from './edit';
+import { Link } from 'react-router-dom';
+import './css/css.css'
 
 const View = () => {
     return (
@@ -45,12 +45,12 @@ const View = () => {
                     </div>
                 </div>
                 <div className="bt_wrap">
-                    <a href={List} className="on">목록</a>
-                    <a href={Edit}>수정</a>
+                    <Link to="/list" className="on">목록</Link>
+                    <Link to="/edit">수정</Link>
                 </div>
             </div>
         </div>
     );
 };
 
-export default View();
+export default View;

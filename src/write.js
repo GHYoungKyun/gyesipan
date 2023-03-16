@@ -1,6 +1,7 @@
 import React from 'react';
-import View from './view';
-import List from './list';
+import { Link } from 'react-router-dom';
+import './css/css.css'
+
 const Write = () => {
     return (
         <div className="board_wrap">
@@ -31,12 +32,12 @@ const Write = () => {
                     </div>
                 </div>
                 <div className="bt_wrap">
-                    <a href={View} className="on">등록</a>
-                    <a href={List}>취소</a>
+                    <Link to="/view" className="on">등록</Link>
+                    <Link to="/list">취소</Link>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Write();
+export default Write;
