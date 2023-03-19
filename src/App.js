@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
+import List from './list';
+import Edit from './edit';
+import Write from './write';
+import View from './view';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          "Hello world!"
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <ul>
+              <li>
+                  <Link to="/list">게시판으로 가기</Link>
+              </li>
+          </ul>
+          <hr />
+          <Routes>
+              <Route path="/list" element={<List />} />
+              <Route path="/edit" element={<Edit />} />
+              <Route path="/write" element={<Write />} />
+              <Route path="/view" element={<View />} />
+          </Routes>
+      </div>
+
   );
-}
+};
 
 export default App;
