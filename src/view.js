@@ -43,6 +43,7 @@ const View = () => {
                 <div className="bt_wrap">
                     <Link to="/list" className="on">목록</Link>
                     <Link to="/edit">수정</Link>
+                    <Link to="/list">삭제</Link>
                 </div>
             </div>
         </div>
