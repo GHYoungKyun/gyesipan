@@ -16,10 +16,6 @@ const View = () => {
                     </div>
                     <div className="info">
                         <dl>
-                            <dt>번호</dt>
-                            <dd>1</dd>
-                        </dl>
-                        <dl>
                             <dt>글쓴이</dt>
                             <dd>김이름</dd>
                         </dl>
@@ -43,6 +39,7 @@ const View = () => {
                 <div className="bt_wrap">
                     <Link to="/list" className="on">목록</Link>
                     <Link to="/edit">수정</Link>
+                    <Link to="/list">삭제</Link>
                 </div>
             </div>
         </div>
