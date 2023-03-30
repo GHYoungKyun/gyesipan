@@ -16,10 +16,6 @@ const View = () => {
                     </div>
                     <div className="info">
                         <dl>
-                            <dt>번호</dt>
-                            <dd>1</dd>
-                        </dl>
-                        <dl>
                             <dt>글쓴이</dt>
                             <dd>김이름</dd>
                         </dl>
